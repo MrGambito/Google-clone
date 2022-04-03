@@ -6,4 +6,73 @@
 
 html {
     font-size: 62.5%;
+    font-family: Arial, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+/* navigation bar */
+.navbar {
+    box-sizing: inherit;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+.navbar--icons {
+    order: 2;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.navbar--links {
+    order: 1;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.material-icons-outlined.apps, .material-icons-outlined.perm {
+    font-size: 4rem;
+}
+
+.navbar--links div {
+    box-sizing: inherit;
+    display: inline;
+    font-size: 1.7rem;
+}
+
+.navbar--links a{
+    padding: .5rem;
+}
+
+/* Main content */
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.search-bar {
+
+}
+
+.search-bar input {
+    width: 487px;
+    height: 34px;
+    border: none;
+}
+
