@@ -1,0 +1,143 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --main-gray: rgba(100, 100, 100, 0.3);
+}
+
+a {
+    text-decoration: none;
+
+}
+/* navigation bar */
+.navbar {
+    box-sizing: inherit;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+.navbar--icons {
+    order: 2;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.navbar--links {
+    order: 1;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.material-icons-outlined.apps, .material-icons-outlined.perm {
+    font-size: 4rem;
+    color: #888;
+}
+
+.navbar--links div {
+    box-sizing: inherit;
+    display: inline;
+    font-size: 1.7rem;
+}
+
+.navbar--links a{
+    padding: .5rem;
+    color: darkgray;
+}
+
+/* Main content */
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    width: 100vw;
+    align-items: center;
+}
+.search-bar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    border: solid 2px rgb(240, 240, 240);
+    border-radius: 25px;
+}
+
+.material-icons-outlined.search, 
+.material-icons-outlined.mic {
+    padding: 0px 8px;
+    color: gray;
+}
+
+.search-bar input {
+    width: 487px;
+    height: 34px;
+    border: none;
+    font-size: 1.6rem;
+}
+
+input {
+    outline: none;
+}
+
+.search-bar:hover {
+    box-shadow: .2rem .2rem .2rem .2rem var(--main-gray);
+}
+
+.search-buttons {
+    display: flex;
+    font-size: 1.8rem;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search-buttons input {
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    border: 2px solid var(--main-gray);
+    border-radius: .5rem;
+    background-color: var(--main-gray);
+}
+
+.search-buttons input:hover {
+    border: 1px solid black;
+    box-shadow: .2rem .2rem .2rem .2rem var(--main-gray);
+}
+
+.offer {
+    height: 30vh;
+}
+
+.country {
+    font-size: 1.8rem;
+    background-color: #888;
+    padding: 1.3rem;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+}
