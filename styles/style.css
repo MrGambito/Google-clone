@@ -111,11 +111,33 @@ input {
     margin-top: 2rem;
 }
 
-.search-buttons div {
+.search-buttons input {
     margin: 1rem;
     padding: 1rem;
     color: black;
     border: 2px solid var(--main-gray);
     border-radius: .5rem;
     background-color: var(--main-gray);
+}
+
+.search-buttons input:hover {
+    border: 1px solid black;
+    box-shadow: .2rem .2rem .2rem .2rem var(--main-gray);
+}
+
+.offer {
+    height: 30vh;
+}
+
+.country {
+    font-size: 1.8rem;
+    background-color: #888;
+    padding: 1.3rem;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
 }
