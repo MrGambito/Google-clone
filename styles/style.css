@@ -23,7 +23,7 @@ a {
     display: flex;
     position: relative;
     justify-content: flex-end;
-    padding: 1%;
+    padding: .5%;
 }
 
 .navbar--icons {
@@ -73,6 +73,7 @@ a {
     align-items: center;
 }
 .search-bar {
+    height: 45px;
     box-sizing: border-box;
     display: flex;
     justify-content: content;
@@ -83,6 +84,7 @@ a {
 
 .material-icons-outlined.search, 
 .material-icons-outlined.mic {
+    font-size: 2rem;
     padding: 0px 8px;
     color: gray;
 }
@@ -107,22 +109,22 @@ input {
     font-size: 1.8rem;
     flex-direction: row;
     width: 100%;
+    height: auto;
     justify-content: center;
     margin-top: 2rem;
 }
 
 .search-buttons input {
     margin: 1rem;
-    padding: 1rem;
+    padding: .7rem;
     color: black;
-    border: 2px solid var(--main-gray);
+    border: 0px none;
     border-radius: .5rem;
-    background-color: var(--main-gray);
+    background-color: #f2f2f2;
 }
 
 .search-buttons input:hover {
-    border: 1px solid black;
-    box-shadow: .2rem .2rem .2rem .2rem var(--main-gray);
+    box-shadow: 0rem 0rem 0rem .1rem var(--main-gray);
 }
 
 .offer {
@@ -130,14 +132,33 @@ input {
 }
 
 .country {
+    color: #70757a;
     font-size: 1.8rem;
-    background-color: #888;
+    background-color: #f2f2f2;
     padding: 1.3rem;
-
+    border-bottom: 1px solid #dadce0;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2;
+}
 
+.footer .about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about--company, .about--terms {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    color: #70757a;
+    font-size: 1.5rem;
+}
+
+.about--company li, .about--terms li {
+    padding: 10px;
 }
